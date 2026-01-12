@@ -4,6 +4,10 @@ import { jsPDF } from 'jspdf';
 import { AlertCircle, CheckCircle, Database, FileText, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const API_URL = import.meta.env.VITE_API_URL;
+
+
+
 const PredictionPage = () => {
     const [formData, setFormData] = useState({
         age: 50,
