@@ -20,8 +20,8 @@ app.add_middleware(
 
 # Load models
 # Files are in the same directory
-MODEL_PATH = "logistic_model.pkl"
-SCALER_PATH = "scaler.pkl"
+MODEL_PATH = "model/logistic_model.pkl"
+SCALER_PATH = "model/scaler.pkl"
 
 try:
     model = joblib.load(MODEL_PATH)
