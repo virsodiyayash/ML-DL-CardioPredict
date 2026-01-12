@@ -43,7 +43,7 @@ const PredictionPage = () => {
         setResult(null);
 
         try {
-            const response = await axios.post('https://cardio-fastapi-q471.onrender.com/predict', formData);
+            const response = await axios.post(`${import.meta.env.VITE_CARDIO_API}/predict`, formData);
             setResult(response.data);
             setTimeout(() => {
                 document.getElementById('result-section')?.scrollIntoView({ behavior: 'smooth' });
